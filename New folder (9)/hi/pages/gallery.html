@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section style="margin-top: 100px;">
+    <h2 class="section-title">Creative Work</h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
+      A curated collection of design explorations, UI concepts, and visual experiments
+    </p>
+    
+    <div class="gallery-grid">
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-1.svg', 'Modern UI Concept')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#00d4d4;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#8f5ff7;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="300" height="300" fill="#0a0e27"/>
+          <rect x="20" y="20" width="260" height="260" rx="20" fill="url(#grad1)"/>
+          <circle cx="150" cy="150" r="80" fill="#0a0e27" opacity="0.8"/>
+          <text x="150" y="160" text-anchor="middle" fill="#00d4d4" font-size="24" font-weight="bold">UI Design</text>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-2.svg', 'Branding Exploration')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <defs>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#00d4d4;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="300" height="300" fill="#1a1f3a"/>
+          <polygon points="150,30 270,100 270,200 150,270 30,200 30,100" fill="url(#grad2)"/>
+          <text x="150" y="160" text-anchor="middle" fill="#1a1f3a" font-size="20" font-weight="bold">Brand</text>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-3.svg', 'Mobile App Design')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <defs>
+            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#8f5ff7;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#00d4d4;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="300" height="300" fill="#2d3561"/>
+          <rect x="40" y="30" width="220" height="240" rx="30" fill="#0a0e27" stroke="url(#grad3)" stroke-width="3"/>
+          <circle cx="150" cy="270" r="10" fill="url(#grad3)"/>
+          <text x="150" y="150" text-anchor="middle" fill="#00d4d4" font-size="18">Mobile</text>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-4.svg', 'Dashboard Interface')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <rect width="300" height="300" fill="#1a1f3a"/>
+          <rect x="10" y="10" width="280" height="280" fill="none" stroke="#00d4d4" stroke-width="2"/>
+          <line x1="80" y1="10" x2="80" y2="290" stroke="#00d4d4" stroke-width="1"/>
+          <line x1="10" y1="80" x2="290" y2="80" stroke="#00d4d4" stroke-width="1"/>
+          <text x="150" y="150" text-anchor="middle" fill="#00d4d4" font-size="16">Dashboard</text>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-5.svg', 'Color Exploration')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <circle cx="75" cy="75" r="50" fill="#00d4d4"/>
+          <circle cx="225" cy="75" r="50" fill="#00f0ff"/>
+          <circle cx="75" cy="225" r="50" fill="#8f5ff7"/>
+          <circle cx="225" cy="225" r="50" fill="#0a0e27"/>
+          <rect width="300" height="300" fill="none" stroke="#b0b8d4" stroke-width="1" opacity="0.3"/>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-6.svg', 'Typography Study')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <rect width="300" height="300" fill="#0a0e27"/>
+          <text x="150" y="100" text-anchor="middle" fill="#00d4d4" font-size="32" font-weight="bold">Aa</text>
+          <text x="150" y="150" text-anchor="middle" fill="#00f0ff" font-size="24">Typography</text>
+          <text x="150" y="200" text-anchor="middle" fill="#b0b8d4" font-size="16">Clean & Modern</text>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-7.svg', 'Icon System')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <defs>
+            <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#8f5ff7;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="300" height="300" fill="#1a1f3a"/>
+          <g transform="translate(75, 75)">
+            <rect width="60" height="60" fill="url(#grad7)"/>
+            <text x="30" y="40" text-anchor="middle" fill="#1a1f3a" font-size="32" font-weight="bold">⚡</text>
+          </g>
+          <g transform="translate(165, 75)">
+            <rect width="60" height="60" fill="url(#grad7)"/>
+            <text x="30" y="40" text-anchor="middle" fill="#1a1f3a" font-size="32" font-weight="bold">🎯</text>
+          </g>
+          <g transform="translate(75, 165)">
+            <rect width="60" height="60" fill="url(#grad7)"/>
+            <text x="30" y="40" text-anchor="middle" fill="#1a1f3a" font-size="32" font-weight="bold">💡</text>
+          </g>
+          <g transform="translate(165, 165)">
+            <rect width="60" height="60" fill="url(#grad7)"/>
+            <text x="30" y="40" text-anchor="middle" fill="#1a1f3a" font-size="32" font-weight="bold">🚀</text>
+          </g>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-8.svg', 'Layout System')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <rect width="300" height="300" fill="#2d3561"/>
+          <rect x="20" y="20" width="80" height="80" fill="#00d4d4" opacity="0.7"/>
+          <rect x="120" y="20" width="80" height="80" fill="#00d4d4" opacity="0.5"/>
+          <rect x="220" y="20" width="60" height="80" fill="#00d4d4" opacity="0.3"/>
+          <rect x="20" y="120" width="260" height="30" fill="#00d4d4" opacity="0.4"/>
+          <rect x="20" y="170" width="260" height="100" fill="#00d4d4" opacity="0.2"/>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 9 -->
+      <div class="gallery-item" onclick="openGalleryModal('../assets/images/gallery/design-9.svg', 'Illustration Style')">
+        <svg viewBox="0 0 300 300" class="gallery-image" style="width: 100%; height: 100%;">
+          <defs>
+            <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#8f5ff7;stop-opacity:1" />
+              <stop offset="50%" style="stop-color:#00d4d4;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#00f0ff;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="300" height="300" fill="url(#grad9)"/>
+          <circle cx="150" cy="150" r="100" fill="none" stroke="#0a0e27" stroke-width="3" opacity="0.5"/>
+          <circle cx="150" cy="150" r="70" fill="none" stroke="#0a0e27" stroke-width="2" opacity="0.3"/>
+          <circle cx="150" cy="150" r="40" fill="#0a0e27"/>
+        </svg>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Optimization Note -->
+  <section style="background: rgba(45, 53, 97, 0.3); border-radius: 15px; padding: 2rem; margin: 3rem 2rem; border-left: 4px solid var(--accent-teal);">
+    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">📸 Image Optimization Standards</h3>
+    <p style="color: var(--text-secondary); line-height: 1.8;">
+      All gallery images are optimized for web performance:
+    </p>
+    <ul style="color: var(--text-secondary); margin: 1rem 0 0 1.5rem; line-height: 1.8;">
+      <li><strong>Format:</strong> WebP with JPEG fallback for maximum compatibility</li>
+      <li><strong>Compression:</strong> High-quality compression at 80-85% quality</li>
+      <li><strong>Lazy Loading:</strong> Images load on-demand as you scroll</li>
+      <li><strong>Responsive:</strong> Automatically scales to device size</li>
+      <li><strong>CDN Ready:</strong> Optimized for content delivery networks</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Personal Portfolio. All rights reserved. | Designed with creativity and built with code.</p>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
